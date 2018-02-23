@@ -41,7 +41,7 @@ type SM struct {
 }
 
 // EnterState transit the statemachine from the current state to the state in parameter.
-// It returns the next state the statemachine should tranit to.
+// It returns the next state the statemachine should transit to.
 func (sm *SM) EnterState(s string) (string, error) {
 	log.Debugf("Job: %v, transiting from State: %s, to State: %s", sm.CurrentJob, sm.CurrentState, s)
 	targets, ok := sm.Transitions[sm.CurrentState]
