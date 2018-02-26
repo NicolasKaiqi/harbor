@@ -165,7 +165,7 @@ type BaseProjectCollection struct {
 	Member string
 }
 
-// ProjectRequest holds informations that need for creating project API
+// ProjectRequest holds informations that needed for creating project API
 type ProjectRequest struct {
 	Name     string            `json:"project_name"`
 	Public   *int              `json:"public"` //deprecated, reserved for project creation in replication
